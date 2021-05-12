@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import AboutLinks from './components/AboutLinks';
-
+import signature from './images/signature.png';
 import buildingSite from './images/building_website.svg';
+
 const App = () => {
   return (
     <AppContainer>
@@ -12,6 +13,7 @@ const App = () => {
         <br />
         <h2>Under development....I will launch this before 20th May, 2021</h2>
         <AboutLinks></AboutLinks>
+        <img src={signature} alt='' />
       </Content>
     </AppContainer>
   );
@@ -36,8 +38,20 @@ const Image = styled.img`
 
 const Content = styled.div`
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  > img {
+    width: 40%;
+    height: auto;
+  }
   > h4 {
     text-align: center;
+  }
+
+  > h2 {
+    margin-bottom: 3rem;
   }
 `;
 export default App;

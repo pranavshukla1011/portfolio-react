@@ -6,8 +6,10 @@ const AboutLinksDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
+  height: 5rem;
   overflow: auto;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 25px;
   a {
     color: black;
     font-size: 2rem;
