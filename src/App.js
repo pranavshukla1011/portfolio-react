@@ -11,7 +11,9 @@ const App = () => {
       <Content>
         <h4>ERROR 404</h4>
         <br />
-        <h2>Under development....I will launch this before 30th June, 2021</h2>
+        <h2>
+          Under development....I will launch this before 31st August, 2021
+        </h2>
         <AboutLinks></AboutLinks>
         <img src={signature} alt='' />
       </Content>
